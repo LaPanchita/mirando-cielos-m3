@@ -57,4 +57,4 @@ El archivo `main.scss` importa todos los parciales y se compila a `css/main.css`
    - Ejecutar `sass scss/main.scss css/main.css --watch`
 
 ## 🔗 Repositorio
-(Se agregará el enlace al repositorio público de GitHub)
+https://github.com/LaPanchita/mirando-cielos-m3git
