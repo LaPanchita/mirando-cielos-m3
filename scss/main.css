@@ -1,0 +1,87 @@
+.weather-app {
+  min-height: 100vh;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to bottom, #e8fff7 0%, #c6f3e6 100%);
+  position: relative;
+  overflow-x: hidden;
+}
+.weather-app::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.6) 0%, transparent 40%), radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.35) 0%, transparent 45%), radial-gradient(circle at 50% 70%, rgba(255, 255, 255, 0.35) 0%, transparent 50%);
+  pointer-events: none;
+}
+.weather-app__header {
+  background: linear-gradient(to right, rgba(168, 213, 186, 0.9), rgba(190, 231, 232, 0.9));
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.weather-app__content {
+  position: relative;
+  z-index: 1;
+}
+.weather-app__footer {
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
+  color: #355f5b;
+  opacity: 0.8;
+}
+
+.place-card {
+  border-radius: 14px;
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+  /* VARIANTES DE CLIMA */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.place-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.12);
+}
+.place-card__name {
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+.place-card__temp {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.place-card__state {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+.place-card--sunny {
+  background-color: #fff7d6;
+  border-left: 6px solid #f4c430;
+}
+.place-card--rainy {
+  background-color: #e6f0fa;
+  border-left: 6px solid #4a90e2;
+}
+.place-card--cold {
+  background-color: #eef2f3;
+  border-left: 6px solid #8fa3ad;
+}
+.place-card--windy {
+  background-color: #f3f3f3;
+  border-left: 6px solid #999;
+}
+.place-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+}
+
+.place-card--featured {
+  background: linear-gradient(to bottom right, #e4fff1, #c8f3db);
+  border: 2px solid #7ecfa2;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.18), 0 0 40px rgba(126, 207, 162, 0.6);
+  transform: scale(1.05);
+  position: relative;
+}/*# sourceMappingURL=main.css.map */
